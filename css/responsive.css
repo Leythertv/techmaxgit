@@ -1,0 +1,295 @@
+/* Para pantallas de Desktops */
+@media screen and (max-width:1200px){
+    .contenedor{
+        max-width: 90%;
+    }
+    #cabecera img{
+        padding-left:40px;
+        width: 80%;
+    }
+    .menu_barra li a{ 
+        padding: 15px 10px;  
+    }
+    .barra-top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+    }
+}
+/* Para pantallas de Desktops y Laptops */
+@media screen and (max-width:992px){
+    .contenedor{
+        max-width: 95%;
+    }
+    #cabecera img{
+        padding-left:10px;
+        max-width: 70%;
+    }
+    #bienvenido h2{
+        font-size: 65px;
+    }
+    #bienvenido h3{
+        font-size: 19px;
+    }
+    #bienvenido p{
+        font-size: 15px;
+    }
+    .columna1{
+        position: absolute; /*posicion del texto*/
+        top:210px; /*texto arriba*/
+        left:70px; /*texto a la izquierda*/
+    }
+ 
+}
+/* Para pantallas de Tablet */
+@media screen and (max-width:768px){
+    .contenedor{
+        max-width: 98%;
+    }
+    .menu_barra li a{  
+        padding: 15px 4px;
+        font-size: 14px;
+    }
+    #cabecera img{
+        padding-left: 20px;
+        max-width: 80%;
+    }
+    .contenedortablapie{
+        max-width: 98%;
+    }
+    .columna1{
+        position: absolute; /*posicion del texto*/
+        top:180px; /*texto arriba*/
+        left:90px; /*texto a la izquierda*/
+    }
+    #quienessomos .fila{
+        flex-direction: column;
+    }
+    #quienessomos img{
+        width: 100%;
+    }
+    #servicios img{
+        width: 100%;
+    }
+    #contactanos img{
+        width: 100%;
+    }
+    #beneficio .fila{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #beneficio .columna2{
+        flex-basis: 30%;
+        max-width: 30%;
+        margin-bottom: 25px;
+    }
+    #servicios .fila{
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    #servicios .columna{
+        flex-basis: 40%;
+        max-width: 40%;
+        margin-bottom: 25px;  
+    }
+    #servicios h2{
+        text-align: center;
+    }
+    #articulos .fila{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #articulos .columna{
+        flex-basis: 40%;
+        max-width: 40%;
+        margin-bottom: 25px;
+    }
+    #bienvenido h2{
+        font-size: 50px;
+    }
+    #bienvenido h3{
+        font-size: 15px;
+    }
+    #bienvenido p{
+        font-size: 12px;
+    }
+    #seccionTabla .tabla{
+        width: 98%;
+        font-size: 0.9em;
+    }
+    #seccionTabla .contenedortablapie{
+        width: 98%;
+    }
+    #contactanos .fila{
+        flex-direction: column-reverse;
+    }
+    #contactanos img{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 20px;
+    }
+    #cifras .fila{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #cifras .columna{
+        flex-basis: 40%;
+        max-width: 40%;
+        margin-bottom: 70px;
+    }
+    #cifras h2{
+        font-size: 50px;
+        text-align: center;
+    }
+    #cifras p{
+        font-size: 20px;
+        text-align: center;
+    }
+    #cifras img{
+        width: 30%;
+    }
+    
+}
+/* Para pantallas de Tablet --Pie-- */
+
+@media screen and (max-width:768px){
+    #pie .contenedor{
+        max-width: 98%; /* ancho maximo */
+    }
+    footer .contenedor{
+        max-width: 98%; /* ancho maximo */
+    }
+    #pie{
+        padding: 0 30 0 0; /* relleno */
+    }
+    .columnapie{
+        flex-basis: 45%; /* base flexible */        
+    }
+    footer .columnapie{
+        flex-basis: 0; /* base flexible */
+    }
+}
+    
+/* Para pantallas de Celular */
+@media screen and (max-width:576px){
+    .contenedor{
+        max-width: 100%;
+    }
+    .contenedortablapie{
+        max-width: 100%;
+    }
+    #cifras h2{
+        font-size: 70px;
+        text-align: center;
+    }
+    #cifras p{
+        font-size: 20px;
+        text-align: center;
+    }
+    #cifras img{
+        width: 40%;
+    }
+    .columna1{
+        position: absolute; /*posicion del texto*/
+        top:160px; /*texto arriba*/
+        left:50px; /*texto a la izquierda*/
+    }
+    .menu_barra li a{  
+        padding: 15px 2px;
+        font-size: 10px;
+    }
+    #cabecera img{
+        max-width: 100%;
+    }
+    #bienvenido h2{
+        font-size: 35px;
+    }
+    #bienvenido h3{
+        font-size: 10px;
+    }
+    #bienvenido p{
+        font-size: 9px;
+    }
+    #cifras .fila{
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100%;
+    }
+    #cifras .columna{
+        flex-basis: 60%;
+        max-width: 60%;
+        margin-bottom: 25px;
+    }
+    #beneficio .fila{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #beneficio .columna2{
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
+    #servicios .fila{
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    #servicios .columna{
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-bottom: 25px;  
+    }
+    #articulos .fila{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #articulos .columna{
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
+    #seccionTabla .tabla{
+        width: 90%;
+        font-size: 0.9em;
+    }
+    #seccionTabla .contenedortablapie {
+        width: 100%;
+    }
+     .tabla tr td:nth-child(2){
+        text-align: center;
+    }
+ 
+}
+/* Para pantallas de Celular --Pie-- */
+@media screen and (max-width:576px){
+    #pie .contenedor{
+        width: 100%; /* ancho */
+    }
+    .columnapie{
+        flex-basis: 45%; /* base flexible */
+        
+    }
+    footer .columnapie{
+        flex-basis: 0; /* base flexible */
+    
+    }
+    .areacopy .filapie{
+        flex-direction: column; /* direccion */
+        align-items: center;       
+    }
+    footer ul{
+        padding: 0;     /* relleno */   
+    }
+    footer{
+        line-height: 32px;/*  altura de la linea */
+    }
+    .areacopy{
+        padding-top: 20px ; /* relleno */ 
+        padding-bottom: 20px; /* relleno */ 
+    }
+    
+}

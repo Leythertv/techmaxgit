@@ -1,0 +1,551 @@
+/* enlazar con tipo de letra de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Noto+Sans&display=swap');
+html{
+    /*Retrasa desplazamiento del scroll*/
+    scroll-behavior: smooth;
+}
+
+*{
+    margin:0;  /*elimina margen*/
+    padding:0,  /*elimina espaciado*/
+}
+
+/* declaracion de variables */
+
+:root{
+    --color-blanco: #fff;
+    --color-negro: #000;
+    --color-plomo: #4c4d56;
+    --color-pomo-oscuro: #333333;
+    --color-blanco2: #c4c5c7;
+    --color-blanco3:#eeeff3;
+    --color-blanco4:#ebebeb;
+    --color-azulnoche: #000c29;
+    --color-azulino: #0066ff;
+    --color-azul:#013ce0;
+    --color-azulnoche2:#1a253f;
+    --color-white: white;
+    --color-azulino2: #005de0;
+    --color-azulplomo: #415674;
+
+}
+/* ----------------------------
+    Selectores de estilo HTML 
+-------------------------------*/
+
+body{
+    /* font-family: sans-serif; tipo letra */
+    font-family: 'Manrope', sans-serif;
+}
+footer{ 
+    font-family: 'Manrope', sans-serif; /* estilo de fuente */
+}
+footer li{    
+    margin-right: 10px; /* margen derecho de la listas */
+}
+footer ul{   
+    list-style: none; /* quita los estilos */
+    flex-direction: row;    /* agrupar por columnas */
+    display: flex; /* flexible  */
+    line-height: 0%; /* quitar tamaño de interlineado dentro de una lista */
+}
+a{ 
+    text-decoration: none; /* quita las decoraciones */
+    color:var(--color-blanco2); /* color de letra */
+}
+footer .columnapie{    
+    align-items: center; /* alinear elementos al centro */
+}
+
+/* ----------------------------
+    Selectores de estilo ID 
+-------------------------------*/
+
+#cabecera{
+    background-color:var(--color-blanco); /*fondo color azul*/
+    padding-top: 15px; /*espacio de relleno*/
+    padding-bottom: 15px; /*espacio de relleno*/
+}
+#cabecera img{
+    width: 100%; /*ancho*/
+}
+#menu{
+    background-color:var(--color-blanco2); /* Color de fondo del menú */
+    padding-right: 40px;
+}
+
+
+#bienvenido{
+    padding-bottom: 14px; /*espacio de relleno*/
+    color:var(--color-blanco) /*color blanco*/
+}
+#bienvenido h2{
+    font-size: 80px;/*tamaño de la fuente*/
+    line-height: 1.2; /*interlineado*/
+    padding-bottom: 20px; /*espacio de relleno*/
+    color:var(--color-blanco) /*color blanco*/
+}
+#bienvenido p{
+    font-size: 18px;/*tamaño de la fuente*/
+    line-height: 1.7; /*interlineado*/
+    padding-bottom: 20px; /*espacio de relleno*/
+    color:var(--color-blanco) /*color blanco*/
+}
+#bienvenido h3{
+    font-size: 16px;/*tamaño de la fuente*/
+    color:var(--color-blanco) /*color blanco*/
+}
+#bienvenido img{
+    width: 100%; /*ancho*/
+}
+#beneficio h2{
+    font-size: 20px;/*tamaño de la fuente*/
+    text-align: center;/*Alineacion al centro*/
+    padding-bottom: 20px; /*espacio de relleno*/
+    color: var(--color-negro); /*color negro, sacado de la página*/
+}
+#beneficio p{
+    font-size: 14px;/*tamaño de la fuente*/
+    text-align: center;/*Alineacion al centro*/
+    padding-bottom: 10px; /*espacio de relleno*/
+    color: var(--color-plomo); /*color plomo, sacado de la página*/
+    line-height: 1.7; /*interlineado*/
+}
+#articulos{
+    
+    padding-top: 130px; /*espacio de relleno*/
+    padding-bottom: 70px; /*espacio de relleno*/
+}
+#articulos h2{
+    font-size: 40px;/*tamaño de la fuente*/
+    color: var(--color-pomo-oscuro); /*color plomo oscuro, sacado de la página*/
+    text-align: center;/*Alineacion al centro*/
+    padding-bottom: 45px; /*espacio de relleno*/
+}
+#articulos h4{
+    font-size: 22px;/*tamaño de la fuente*/
+    text-align: left;/*Alineacion a la izquierda*/
+    padding-top: 45px; /*espacio de relleno*/
+    
+}
+#articulos p{
+    font-size: 14px; /*tamaño de la fuente*/
+    text-align: left; /*alineacion a la izquierda*/
+    color:var(--color-plomo); /* color plomo*/
+    line-height: 26px; /*interlineado*/
+}
+#cifras{
+    background-color:var(--color-azulnoche);   /* color del fondo */
+    padding-top: 120px; /*espacio de relleno*/
+    padding-bottom: 120px; /*espacio de relleno*/
+}
+#cifras h2{
+    font-family: 'Noto Sans', sans-serif; /* font-family: sans-serif; tipo letra */
+    font-size: 50px;/*tamaño de la fuente*/
+    color: var(--color-blanco); /*color plomo oscuro, sacado de la página*/
+    text-align: center;/*Alineacion al centro*/
+    padding-bottom: 2px; /*espacio de relleno*/
+}
+#cifras p{
+    font-family: 'Noto Sans', sans-serif; /* font-family: sans-serif; tipo letra */
+    font-size: 14px; /*tamaño de la fuente*/
+    text-align: left; /*alineacion a la izquierda*/
+    color:var(--color-blanco); /* color plomo*/
+    text-align: center;/*Alineacion al centro*/
+}
+#quienessomos{
+    
+    padding-top: 70px; /*espacio de relleno*/
+    padding-bottom: 70px; /*espacio de relleno*/
+}
+
+#quienessomos h2{
+    font-size: 40px; /*tamaño de la letra*/
+    text-align: left; /*alineacion a la izquierda*/
+    padding-bottom: 2px; /*espacio de relleno*/
+
+}
+#quienessomos p{
+   
+    font-size: 16px; /*tamaño de la fuente*/
+    text-align: left; /*alineacion a la izquierda*/
+    line-height: 1.7; /*interlineado*/
+    color:var(--color-plomo) /* color plomo*/
+
+}
+#servicios{
+    
+    padding-top: 70px; /*espacio de relleno*/
+    padding-bottom: 110px; /*espacio de relleno*/
+}
+#servicios h2{
+    font-size: 22px;/*tamaño de la fuente*/
+    text-align: left;/*Alineacion a la izquierda*/
+    padding-top: 1px; /*espacio de relleno*/
+    font-family: 'Poppins'; /* font-family: sans-serif; tipo letra */
+}
+#contactanos h2{
+    font-size: 40px;/*tamaño de la fuente*/
+    color: var(--color-pomo-oscuro); /*color plomo oscuro, sacado de la página*/
+    text-align: center;/*Alineacion al centro*/
+    padding-bottom: 45px; /*espacio de relleno*/
+
+}
+
+#formulario_contacto h3{
+    background-color: var(--color-azulnoche); /* color del fondo */
+    color: var(--color-blanco); /* color de letra */
+    text-align: center; /*texto centrado*/
+    padding: 30px 0px; /*espacio de relleno*/
+    font-size: 30px; /*tamaño de letra*/
+    border-radius: 15px; /*borde*/
+    margin-bottom: 15px; /*margen*/
+    margin-left: 15px;
+    
+
+}
+#formulario_contacto p{
+    text-align:center; /* centrar */
+    padding-bottom: 10px; /* espaciado */
+    padding-top: 10px; /* espaciado */    
+}
+#formulario_contacto a{
+    color: var(--color-azulino2);
+}
+
+#boton-irArriba{
+    /* Posicionar el boton */
+    position:fixed;
+    bottom: 30px;
+    right: 30px;
+    /* Decorar el boton */
+    background-color: var(--color-azulino2);
+    color: var(--color-blanco);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+    /* Oculta el boton */
+    opacity: 0;
+    border: 2px solid var(--color-azulino2); /* borde*/
+    border-style: solid; /* estilo de borde*/
+}
+#boton-irArriba:hover{
+    background-color: var(--color-blanco);
+    color: var(--color-azulino2);
+    transform: scale(1.1);
+    transform: translateY(-5px);
+    /* box-shadow: -3px 8px 25px 0px var(--color-azul); */
+}
+/* PIE */
+#pie{   
+    padding-top: 70px;  /* aumentar el espaciado superior */
+    padding-bottom: 70px;     /* aumentar el espaciado inferior */
+    background-color: var(--color-azulnoche) ;    /* color de fondo */
+    font-family: 'Manrope', sans-serif;    /* fuente MANROPE desde google */
+}
+#pie li{ 
+    list-style: none; /* Sin estilos a los elementos de una lista dentro del pie */
+}
+#pie h4{ 
+    color: var(--color-blanco);  /* color de las letras en h4 */
+    font-size: 20px;    /* tamaño de la letra */
+}
+#pie .filapie{ 
+    flex-wrap: wrap;/* estilos para adaptar las columnas dentro del espacio de la pag */
+}
+#pie ul{
+    padding: 0; /* reiniciar el espaciado dentro de una lista dentro de una seccion pie */
+}/* PIE */
+
+
+/* ----------------------------
+    Selectores de estilo CLASS 
+-------------------------------*/
+.menu_barra{
+    list-style-type: none; /*quita las vñetas*/
+    display:flex; /*activa flexbox*/
+    flex-direction: row; /*los elementos hijo se colocan uno al lado de otro (fila)*/
+    justify-content: space-evenly; /*coloca espacio proporcional entre los elemnetos hijos*/
+}
+.menu_barra li a{
+    display: block; /*convierte el elemento de tipo linea a elemento de tipo contenedor*/
+    /*espaciado entre enlaces*/
+    padding: 20px 20px; /* arriba, derecha, abajo, izquierda*/
+    border-bottom: 3xp solid transparent;
+    font-weight: bold;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: all 0.5s ease-in-out;
+    color: var(--color-negro);
+    border: 0.5px solid var(--color-blanco); /* borde*/
+} 
+.menu_barra li a:hover{
+    background-color: var(--color-blanco);
+    color: var(--color-azulino2);
+    transform: translateY(-2px);
+    border: 0.5px solid var(--color-azulino2);   
+}
+.boton_enviar{
+    background-color:var(--color-azulino2); /* fondo */
+    border-color: transparent; /* color borde */
+    color: var(--color-blanco); /* color letra */
+    border-radius: 5px; /* borde redondeado*/
+    font-size: 18px; /* tamaño letra*/
+    font-family: "Manrope", sans-serif; /* font-family: sans-serif; tipo letra */
+    font-weight: 700;  /* peso fuente*/
+    height: 60px; /* altura*/
+    line-height: 56px; /* altura de linea*/
+    padding: 0px 55px; /* espaciado*/
+    border: 2px solid var(--color-azulino2); /* borde*/
+    border-style: solid; /* estilo de borde*/
+    cursor: pointer; /* puntero*/
+    transition: all 1s; /* transicion */
+}
+.fila{
+    display:flex; /*uno al costado del otro*/
+    flex-direction: row; /*orden horizontal*/
+}
+.columna1{
+    flex-basis: 0;    /*quita ancho por defecto*/
+    flex-grow: 1;      /*ancho columna de manera proporcional*/
+    position: absolute; /*posicion del texto*/
+    top:270px; /*texto arriba*/
+    left:152px; /*texto a la izquierda*/
+    padding-right: 15px; /*espacio de relleno*/
+}
+
+.columna{
+    flex-basis: 0; /*elimina ancho de columna*/
+    flex-grow: 1; /*columna proporcional*/
+       /*Distancia entre columna*/
+    margin-left: 17px; 
+    margin-right: 17px;
+    padding-right: 2px; /*espacio de relleno*/
+}
+.columna2{
+    flex-basis: 0; /*elimina ancho de columna*/
+    flex-grow: 1; /*columna proporcional*/
+       /*Distancia entre columna*/
+    margin-left: 17px; 
+    margin-right: 17px;
+    padding-right: 20px; /*espacio de relleno*/
+    padding-left: 20px;  /*espacio de relleno*/
+    padding-top: 20px;/*espacio de relleno*/
+    padding-bottom: 20px;/*espacio de relleno*/
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 10%); /* sombra de la caja */
+    border-radius: 10px;
+}
+.contenedor{
+    max-width: 80%; /*tmñ pantalla*/
+    margin-left: auto;  /*centra contenido entre margen izq/derech*/
+    margin-right: auto;  /*centra contenido entre margen izq/derech*/
+}
+.contenedor3{
+    max-width: 100%; /*tmñ pantalla*/
+    margin-left: auto;  /*centra contenido entre margen izq/derech*/
+    margin-right: auto;  /*centra contenido entre margen izq/derech*/
+}
+.img_center{
+    text-align:center; /*imagen centrada*/
+}
+.espaciado{
+    padding-top: 60px; /*espacio de relleno*/
+    padding-bottom: 60px; /*espacio de relleno*/
+}
+.contenedor1 {
+    max-width: 80%; /* Utilizará como máximo el 80% del ancho de la pantalla */
+    
+    /* Centra el contenedor entre el margen izquierdo y derecho */
+    margin-left: auto;
+    margin-right: auto;
+}     
+.ajustar_img{
+    width: 100%; /* ancho */
+}
+.ajustar_mapa{
+    width: 100%; /* ancho */
+    padding-bottom: 60px; /*espacio de relleno*/
+}
+.entrada{
+    margin-top: 20px; /* margen */
+    margin-bottom: 0; /* margen */
+}
+.campo{
+    width: 100%; /* ancho */
+    padding: 10px 0px 10px 10px; /* espaciado */
+    border: 1px solid var(--color-blanco4) ; /* borde */
+    background: var(--color-blanco3); /* fondo */
+    font: inherit; /* heredar */
+    color: var(--color-azulplomo); /* color letra */
+    border-radius: 5px; /* borde redondeado*/
+}
+.boton_enviar{
+    background-color:var(--color-azulino2); /* fondo */
+    border-color: transparent; /* color borde */
+    color: var(--color-blanco); /* color letra */
+    border-radius: 5px; /* borde redondeado*/
+    font-size: 18px; /* tamaño letra*/
+    font-family: "Manrope", sans-serif; /* font-family: sans-serif; tipo letra */
+    font-weight: 700;  /* peso fuente*/
+    height: 60px; /* altura*/
+    line-height: 56px; /* altura de linea*/
+    padding: 0px 55px; /* espaciado*/
+    border: 2px solid var(--color-azulino2); /* borde*/
+    border-style: solid; /* estilo de borde*/
+    cursor: pointer; /* puntero*/
+    transition: all 1s; /* transicion */
+}
+.boton_enviar:hover{
+    background-color: var(--color-blanco);
+    color: var(--color-azulino2);
+}
+.logo{
+    width: 200px;
+}
+.barra-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    position: fixed;
+    background-color: var(--color-blanco2);
+    width: 100%;
+    top: 0px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* PIE */
+.columnapie{ 
+    flex: 0 0 50%; /* uno al costado de otro  */
+    flex-basis: 0; /* base flexible */
+    flex-grow: 1; /* espacio igual para todos */
+     /* minimo de ancho */
+    padding-right: 12px; /* espacio derecha */ 
+    padding-left: 12px;  /* espacio izquierda */
+    display: grid;  /* verlo en cuadriculas */ 
+}
+.areacopy{ 
+    background-color:var(--color-azulnoche);   /* color del fondo */
+    border-top: 1px solid var(--color-azulnoche2); /* borde superior */
+    padding-top: 30px;   /* espacio superior */
+    padding-bottom: 30px;    /* espacio inferior */
+    font-size: 14px;     /* tamaño de letra */
+    font-weight: 400;    /* grosor de la letra */
+    color: var(--color-blanco2);    /* color de la letra */    
+}
+.areacopy i{
+    font-size: 20px;
+}
+.filapie{ 
+    display: flex;  /* flexible para acomodarse */ 
+    flex-direction: row; /* direccion en fila */
+    width: 100%; /* ancho de la fila */
+}
+.items{
+    padding-top: 30px; /* espacio superior */
+}
+.items li{
+    color: var(--color-blanco2); /* color de la letra */
+    padding-top: 9px; /* espacio superior */
+    display: flex;    /* flexible para acomodarse */ 
+    font-size: 14px;  /* tamaño de fuente */
+}
+.itemsimag li{
+    color: var(--color-blanco2); /* color de letra */
+    font-size: 16px;  /* tamaño de fuente */
+    font-weight: 600; /* ancho de letra */
+    line-height: 35px;  /* interlineado */
+}
+.social{
+    justify-items: end; /* alinear elementos al final de la seccion */
+}
+.social li{
+    transition-duration: 0.3s; /* tiempo de transicion */
+    transition-delay: linear;  /* estilo del efecto(modo lineal, la misma velocidad siempre) */
+}
+.espaciadopie{
+    padding-top: 30px; /* espacio superior */
+}
+.tamañoiconos{
+    height: 20px;   /* altura de iconos */
+    padding-right: 10px;  /* espacio derecho */
+}
+.items a:hover{
+    color: var(--color-azulino); /* color de letra luego de la transicion */
+    padding-left: 9px; /* aumentando espacio izquierda luego de la accion*/
+}
+.itemsimag a:hover{
+    color: var(--color-azul);  /* color de letra luego del cambio */  
+}
+.social li:hover{
+    filter: brightness(0) saturate(100%) invert(27%) sepia(56%) saturate(3708%) hue-rotate(201deg) brightness(100%) contrast(102%);
+    /* cambio de color mediante un filtro */ 
+}
+.items a{        
+    transition-property: all;  /* propiedades de trasiciones para todos los elementos */
+    transition-duration: 0.4s;  /* tiempo de la transicion */
+    transition-delay: linear;    /* estilo del efecto(modo lineal, la misma velocidad siempre) */
+}
+.itemsimag a{
+    transition-duration: 0.3s; /* duracion de la transicion */
+    transition-delay: linear;   /* estilo del efecto(modo lineal, la misma velocidad siempre) */
+}/* PIE */
+
+
+/*-----------------------------------
+          Estilos de Tabla
+-------------------------------------*/
+
+#seccionTabla{
+    padding-bottom: 140px;   /* Aumentanto el espaciado inferior */    
+}
+.contenedortablapie{
+    margin: 0; /* reiniciando los margenes a 0 */
+    margin-left: auto;  /*centra contenido entre margen izq/derech*/
+    margin-right: auto;  /*centra contenido entre margen izq/derech*/
+}
+.tabla {
+    width: 80%;  /* el ancho de la tabla */
+    border: 1px solid var(--color-azulino); /* color de borde de la tabla */
+    background-color: var(--color-verde); /* color de fondo de la tabla */
+    color: var(--color-blanco); /* color de letra dentro de la tabla */
+    margin: 0; /* reiniciando los margenes */
+    padding: 0; /* reiniciando los espaciados */
+    margin-left: auto;  /* margen izquierdo */
+    margin-right: auto;    /* margen derecho */
+    
+}
+.tabla tr th{
+    border: 1px solid var(--color-azulnoche2); /* borde de la cabecera dentro de una fila */
+    background-color: var(--color-azulnoche2); /* fondo de la cabecera dentro de una fila */
+    text-align: left; /* alinear texto a la izquierda dentro de la cabecera*/
+    font-family: 'Kanit', sans-serif; /* font-family: sans-serif; tipo letra */
+  
+}
+.tabla tr td{
+    border: 1px solid var(--color-azulnoche2); /* estilo de borde de una columna dentro de una fila ( una celda ) */
+    color:var(--color-azulplomo); /* color de letra de una fila en una columna  */
+    font-family: "Manrope", sans-serif; /* font-family: sans-serif; tipo letra */
+   
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+.tabla tr td:nth-child(1), .tabla tr th:nth-child(1), .tabla tr th:nth-child(2),.tabla tr td:nth-child(3), .tabla tr th:nth-child(3){
+    text-align: center;
+}
+
+
+.error{
+    color: red;
+    font-weight: bold;
+}

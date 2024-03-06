@@ -312,13 +312,13 @@ footer .columnapie{
     display:flex; /*uno al costado del otro*/
     flex-direction: row; /*orden horizontal*/
 }
-.columna1{
+.columna1{    
     flex-basis: 0;    /*quita ancho por defecto*/
-    flex-grow: 1;      /*ancho columna de manera proporcional*/
-    position: absolute; /*posicion del texto*/
+    flex-grow: 1;      /*ancho columna de manera proporcional*/    
     top:270px; /*texto arriba*/
     left:152px; /*texto a la izquierda*/
     padding-right: 15px; /*espacio de relleno*/
+    position: absolute; /*posicion del texto*/
 }
 
 .columna{

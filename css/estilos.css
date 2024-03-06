@@ -315,6 +315,7 @@ footer .columnapie{
 .columna1{    
     flex-basis: 0;    /*quita ancho por defecto*/
     flex-grow: 1;      /*ancho columna de manera proporcional*/    
+    margin-top: 70px;
     top:270px; /*texto arriba*/
     left:152px; /*texto a la izquierda*/
     padding-right: 15px; /*espacio de relleno*/
